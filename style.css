@@ -15,9 +15,28 @@
     box-sizing: border-box;
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--accent);
+    -webkit-box-shadow: inset 0px 0px 6px rgba(34, 40, 49, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover);
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     background-color: var(--primary);
+    overflow-x: hidden;
 }
 
 nav {
